@@ -1,87 +1,335 @@
 <!DOCTYPE html>
-<html lang="eng">
-   <head>
-     <title>Pratik shrgire | java ful stack developer</title>
-     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/lis/font-awesome/60502/css/all.min,css">
+<html lang="en">
 
-   </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratik Shirgire | Java Full Stack Developer</title>
 
-   <body>
-      <header>
-        <nav>
-            <h2 class="logo"> pratik </h2>
-            <ul>
-                <li><a href="#home"></a>Home</li>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">Pratik Shirgire</h2>
+
+            <ul class="nav-links">
+
+                <li><a href="#home">Home</a></li>
+
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills"></a>Skills</li>
+
+                <li><a href="#skills">Skills</a></li>
+
                 <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#services">Services</a></li>
+
                 <li><a href="#contact">Contact</a></li>
+
             </ul>
+
+            <i class="fas fa-bars menu-btn"></i>
+
         </nav>
-      </header>
-         
-         <section class="hero" id="home">
-            <div class="left">
-                <h1>Hello ,I'm</h1>
-                <h2>Pratik Shirgire</h2>
-                <h3>JavaFullStack Develper</h3>
-                <p>ibuild java springboot applcatio wit modern responsive websites</p>
+    </header>
 
-                <a href="#projects" class="btn">view Projects</a>
-                <a href="assets/resume.pdf" class="btn2">download resume</a>
+    <!-- Hero -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <h3>Hello, I'm</h3>
+
+            <h1>Pratik Shirgire</h1>
+
+            <h2><span id="typing"></span></h2>
+
+            <p>
+                Passionate Java Full Stack Developer with knowledge of
+                Java, Spring Boot, React, HTML, CSS, JavaScript and SQL.
+            </p>
+
+            <div class="hero-btn">
+
+                <a href="#projects" class="btn">View Projects</a>
+
+                <a href="assets/resume.pdf" download class="btn2">
+                    Download Resume
+                </a>
+
             </div>
-            <div class="right">
-                <img href="/assets/profile.jpg"></img>
-            </div>
-         </section>
 
-         <section id="about">
-             <h2>About Me</h2>
-              <p>I am a passionate javaful stak develoer.
-                 Iwork with java ,springboot ,htm ,css ,javaScript,React,SQL.
-              </p>
-         </section>
-         
-         <section id="skills">
-             <h2>Skills</h2>
-             <div class="skills">
-                <span>JavaFullStack</span>
-                <span>SQL</span>
-                <span>React</span>
-                <span>css</span>
-                <span>Version Control</span>
-             </div>
-         </section>
+        </div>
 
-         <section id="projects">
-           <h2>Projects</h2>
-             <div class="cards">
-                <div class="card">
-                    <h3>ERP System</h3>
-                    <p>ERP system for collegeily operation </p>
-                </div> 
+        <div class="hero-image">
 
-                <div class="card">
-                    <h3>Portfolio Website</h3>
-                    <p>Aortfolio website for self information </p>
+            <img src="assets/profile.jpg" alt="Pratik">
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+
+    <section class="about" id="about">
+
+        <h2 class="heading">About Me</h2>
+
+        <div class="about-content">
+
+            <img src="assets/profile.jpg" alt="Profile">
+
+            <div>
+
+                <h3>Java Full Stack Developer</h3>
+
+                <p>
+
+                    I am a passionate Java Full Stack Developer.
+                    I love building scalable web applications using
+                    Java, Spring Boot, React, HTML, CSS, JavaScript and SQL.
+
+                    I enjoy solving real-world problems and continuously
+                    learning new technologies.
+
+                </p>
+
+                <div class="info">
+
+                    <p><strong>Name :</strong> Pratik Shirgire</p>
+
+                    <p><strong>Email :</strong> pratikshirgire111@gmail.com</p>
+
+                    <p><strong>Location :</strong> Maharashtra, India</p>
+
+                    <p><strong>Experience :</strong> Fresher</p>
+
                 </div>
-             </div>
-         </section>
 
-         <section id="contact">
-            <h3>Contact Me</h3>
-            <form>
-                <input type="text" placeholder="your name"></br>
-                <input type="email" placeholder="your email"></br>
-                <textarea placeholder="message"></textarea>
-                <button>send</button>
-            </form>
-         </section>
+            </div>
 
-         <footer>
-            <p>2026 pratik shirgire</p>
-         </footer>
-         <script src="script.js"></script>
-   </body>
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+
+    <section class="skills" id="skills">
+
+        <h2 class="heading">My Skills</h2>
+
+        <div class="skill-box">
+
+            <div class="skill">
+
+                <span>Java</span>
+
+                <div class="progress">
+                    <div class="java"></div>
+                </div>
+
+            </div>
+
+            <div class="skill">
+
+                <span>Spring Boot</span>
+
+                <div class="progress">
+                    <div class="spring"></div>
+                </div>
+
+            </div>
+
+            <div class="skill">
+
+                <span>React</span>
+
+                <div class="progress">
+                    <div class="react"></div>
+                </div>
+
+            </div>
+
+            <div class="skill">
+
+                <span>HTML & CSS</span>
+
+                <div class="progress">
+                    <div class="html"></div>
+                </div>
+
+            </div>
+
+            <div class="skill">
+
+                <span>JavaScript</span>
+
+                <div class="progress">
+                    <div class="js"></div>
+                </div>
+
+            </div>
+
+            <div class="skill">
+
+                <span>SQL</span>
+
+                <div class="progress">
+                    <div class="sql"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+
+    <section class="projects" id="projects">
+
+        <h2 class="heading">Projects</h2>
+
+        <div class="project-container">
+
+            <div class="card">
+
+                <img src="assets/project1.jpg" alt="">
+
+                <h3>College ERP System</h3>
+
+                <p>
+                    College ERP Management System using
+                    Java, Spring Boot, MySQL.
+                </p>
+
+                <a href="#" class="btn">GitHub</a>
+
+            </div>
+
+            <div class="card">
+
+                <img src="assets/project2.png" alt="">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    Personal Portfolio using
+                    HTML, CSS and JavaScript.
+                </p>
+
+                <a href="https://patu6468.github.io/Portfolio/" class="btn">GitHub</a>
+
+            </div>
+
+            <div class="card">
+
+                <img src="assets/project3.webp" alt="">
+
+                <h3>Employee Management</h3>
+
+                <p>
+                    CRUD Application using
+                    Spring Boot and MySQL.
+                </p>
+
+                <a href="#" class="btn">GitHub</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Services -->
+
+    <section class="services" id="services">
+
+        <h2 class="heading">Services</h2>
+
+        <div class="service-container">
+
+            <div class="service">
+
+                <i class="fa-solid fa-code"></i>
+
+                <h3>Java Development</h3>
+
+            </div>
+
+            <div class="service">
+
+                <i class="fa-solid fa-database"></i>
+
+                <h3>Database Design</h3>
+
+            </div>
+
+            <div class="service">
+
+                <i class="fa-solid fa-laptop-code"></i>
+
+                <h3>Frontend Development</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+
+        <h2 class="heading">Contact Me</h2>
+
+        <form id="contactForm">
+
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <textarea rows="6" placeholder="Message"></textarea>
+
+            <button class="btn">Send Message</button>
+
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="social">
+
+            <a href="#"><i class="fab fa-github"></i></a>
+
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+            <a href="#"><i class="fas fa-envelope"></i></a>
+
+        </div>
+
+        <p>© 2026 Pratik Shirgire | All Rights Reserved</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
 </html>
