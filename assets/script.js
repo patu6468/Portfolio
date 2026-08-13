@@ -172,39 +172,39 @@ window.addEventListener("scroll", () => {
 // Contact Form
 // ==========================
 
-const form = document.getElementById("contactForm");
+// const form = document.getElementById("contactForm");
 
-form.addEventListener("submit", function (e) {
+// form.addEventListener("submit", function (e) {
 
-    e.preventDefault();
+//     e.preventDefault();
 
-    const inputs = form.querySelectorAll("input, textarea");
+//     const inputs = form.querySelectorAll("input, textarea");
 
-    let valid = true;
+//     let valid = true;
 
-    inputs.forEach(input => {
+//     inputs.forEach(input => {
 
-        if (input.value.trim() === "") {
+//         if (input.value.trim() === "") {
 
-            valid = false;
+//             valid = false;
 
-        }
+//         }
 
-    });
+//     });
 
-    if (!valid) {
+//     if (!valid) {
 
-        alert("Please fill all fields.");
+//         alert("Please fill all fields.");
 
-        return;
+//         return;
 
-    }
+//     }
 
-    alert("Thank You! Your message has been submitted.");
+//     alert("Thank You! Your message has been submitted.");
 
-    form.reset();
+//     form.reset();
 
-});
+// });
 
 
 // ==========================
