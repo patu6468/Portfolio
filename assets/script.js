@@ -171,40 +171,70 @@ window.addEventListener("scroll", () => {
 // ==========================
 // Contact Form
 // ==========================
+// ==========================
+// Contact Form - Formspree
+// ==========================
 
-// const form = document.getElementById("contactForm");
+const form = document.getElementById("contactForm");
 
-// form.addEventListener("submit", function (e) {
+form.addEventListener("submit", async function (e) {
 
-//     e.preventDefault();
+    e.preventDefault();
 
-//     const inputs = form.querySelectorAll("input, textarea");
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-//     let valid = true;
+    if (!name || !email || !message) {
+        alert("Please fill all fields.");
+        return;
+    }
 
-//     inputs.forEach(input => {
+    try {
 
-//         if (input.value.trim() === "") {
+        const response = await fetch(
+            "https://formspree.io/f/mjybrpva",
+            {
+                method: "POST",
 
-//             valid = false;
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
 
-//         }
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    message: message
+                })
+            }
+        );
 
-//     });
+        if (response.ok) {
 
-//     if (!valid) {
+            alert("Thank you! Your message has been sent successfully.");
 
-//         alert("Please fill all fields.");
+            form.reset();
 
-//         return;
+        } else {
 
-//     }
+            const data = await response.json();
 
-//     alert("Thank You! Your message has been submitted.");
+            console.error(data);
 
-//     form.reset();
+            alert("Something went wrong. Please try again.");
 
-// });
+        }
+
+    } catch (error) {
+
+        console.error(error);
+
+        alert("Unable to send message. Please try again later.");
+
+    }
+
+});
 
 
 // ==========================
